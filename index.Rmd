@@ -1,23 +1,33 @@
 ---
 title: "Littératie de données"
+subtitle: "Faire de Sciences Po SGL un pionnier de la culture générale des données"
 author: Datactivist
+date: 29 mars 2018
+
 output:
-  xaringan::moon_reader:
-    css: [default, assets/xaringan.css]
-    seal: FALSE
-    chakra: libs/remark-latest.min.js
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
----
+params:
+  event: CA Sciences Po SGL
 
+---
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(cache = TRUE, widgetframe_widgetsdir = 'widgets')
 ```
+
+layout: true
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src=", system.file('rmarkdown', 'templates', 'xaringan', 'resources', 'img', 'fond_noir_monochrome.png', package='SlidesDatactivist'), " width='100px'></center></span></div>")` 
+
+---
+
 
 class: inverse, center, middle
 
@@ -32,6 +42,45 @@ class: center, middle
 ### pour Sciences-Po-Saint-Germain
 
 ![](./img/logo.png)
+
+---
+## Qui sommes nous ?
+
+<BR><BR><BR><BR>
+
+[![](./img/logo.png)](https://datactivist.coop)
+
+### We .red[open data], we make them .red[useful]
+
+---
+## Qui sommes nous ?
+
+- Datactivist est un .red[**pure player de l’open data**] créé en 2016, par Samuel Goëta et Joël Gombin.
+
+- Se positionnant sur .red[**toutes les étapes du travail d’ouverture des données**], Datactivist travaille tant avec les producteurs de données qu’avec les réutilisateurs et participe à l’appropriation des données par chacun.
+
+- Nous appliquons nos propres .red[**valeurs**] : nous sommes une coopérative ; nos supports de formation et nos contenus sont librement réutilisables, publiés en licence Creative Commons.
+
+- Une approche issue de la recherche : voir notamment **https://datactivist.coop/these**. 
+
+- Nous animons la communauté [#TeamOpenData](https://teamopendata.org).
+
+---
+## Nos activités
+
+- Conseil sur les .red[**stratégies d’ouverture de données**] : nous aidons les organisations dans la conception et la mise en œuvre de leur stratégie d’ouverture de données.
+
+
+- .red[**Accompagnement dans la réutilisation de données ouvertes**] : nous aidons les organisations à utiliser les données au quotidien. 
+
+- .red[**Sensibilisation et formation à la donnée**] : nous formons à la culture générale des données, nous enseignons les grands principes et bonnes pratiques de l'open data et nous introduisons à la data science. 
+
+- .red[**Médiation de données**] : nous organisons des hackathons, des open data camps, des expéditions de données...
+
+???
+
+La médiation de données est aussi fondamentalement une animation de communauté(s). 
+
 
 ---
 ## La donnée : "l'or noir du 21e siècle" ?
@@ -65,8 +114,11 @@ class: center, middle
 ## La culture des données, une nécessité 
 
 - "Culture des données *is the new* Culture générale" ?
+
 - à tous les niveaux hiérarchiques
+
 - dans tous les secteurs
+
 - dans tous les métiers
 
 
@@ -74,9 +126,13 @@ class: center, middle
 ## La culture des données 
 
 - des savoirs
+
 - des compétences (savoir-faire)
+
 - à construire de manière graduelle
+
 - à entretenir tout au long de la vie
+
 - dans tous les secteurs d'activité
 
 ---
@@ -108,8 +164,8 @@ section Première année
 Culture générale des données - Sociohistoire de la quantification - de l'open data au big data  :active,        intro,     2018-09-01, 2018-12-31
 
 section Deuxième année
-Les modèles économiques de la donnée      :active,    eco,   2019-09-01, 2019-12-31
-Les métiers de la donnée - témoignages :active, metiers, 2020-01-01, 2020-06-30
+Module Gestion de projet - colloque Data et territoires      :active,    eco,   2019-09-01, 2019-12-31
+Colloque Data et territoires :active, metiers, 2020-01-01, 2020-06-30
 
 
 section Quatrième année
@@ -121,10 +177,6 @@ Data et affaires publiques :active, aff_publiques_5, 2018-09-01, 2018-12-31
 Data et culture :active, culture_5, 2018-09-01, 2018-12-31
 Data et affaires internationales :active, aff_internationales_5, 2018-09-01, 2018-12-31
 Data et entreprise :active, entreprise_5, 2018-09-01, 2018-12-31
-Data et affaires publiques :active, aff_publiques, 2021-09-01, 2021-12-31
-Data et culture :active, culture, 2021-09-01, 2021-12-31
-Data et affaires internationales :active, aff_internationales, 2021-09-01, 2021-12-31
-Data et entreprise :active, entreprise, 2021-09-01, 2021-12-31
 
 ",
 width = 800)
@@ -148,26 +200,16 @@ width = 800)
 ---
 ## Volume et format des modules
 
-### Modèles économiques de la donnée 
+### Projet collectif encadré : organisation du colloque annuel "Data et territoires" 
 
 - en 2e année
-- 10h, 5 *case studies* de 2 heures chacun. Documents supports + vidéos et/ou interventions en présentiel. 
-- Validation : Réalisation et publication d'un petit  *case study*.
+- 36h, 10h en présentiel et le reste en asynchrone
+- au choix en concurrence avec les autres modules
+- Validation : Participation effective à l'organisation du colloque.
 - compétences à valider :
-  + maîtriser les principaux modèles économiques de la donnée
-  + savoir analyser le modèle économique d'un service ou d'un produit construit sur de la donnée 
-
----
-## Volume et format des modules
-
-### Les métiers de la donnée 
-
-- en 2e année
-- 10h, 5 témoignages en classe virtuelle ou en présentiel. 
-- Validation : quizz.
-- compétences à valider :
-  + savoir décrire les principales compétences "data"
-  + connaître les principaux métiers liés aux données
+  + gestion de projet
+  + veille sur le sujet "data et territoires"
+  + animation d'événement
 
 ---
 ## Volume et format des modules
